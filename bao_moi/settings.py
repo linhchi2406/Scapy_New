@@ -12,19 +12,19 @@ BOT_NAME = 'bao_moi'
 SPIDER_MODULES = ['bao_moi.spiders']
 NEWSPIDER_MODULE = 'bao_moi.spiders'
 
-# ITEM_PIPELINES = {
-#    'scrapy_mysql_pipeline.MySQLPipeline': 300,
-# }
-# MYSQL_HOST = 'localhost'
-# MYSQL_PORT = 3306
-# MYSQL_USER = 'root'
-# MYSQL_PASSWORD = 'linhchi'
-# MYSQL_DB = 'scrapy'
-# MYSQL_TABLE = 'content'
-# MYSQL_UPSERT = False
-# MYSQL_RETRIES = 3
-# MYSQL_CLOSE_ON_ERROR = True
-# MYSQL_CHARSET = 'utf8'
+ITEM_PIPELINES = {
+   'scrapy_mysql_pipeline.MySQLPipeline': 300,
+}
+MYSQL_HOST = 'localhost'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'linhchi'
+MYSQL_DB = 'scrapy'
+MYSQL_TABLE = 'bao'
+MYSQL_UPSERT = False
+MYSQL_RETRIES = 3
+MYSQL_CLOSE_ON_ERROR = True
+MYSQL_CHARSET = 'utf8'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
