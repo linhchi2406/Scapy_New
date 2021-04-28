@@ -49,12 +49,3 @@ class QuoteSpider(scrapy.Spider):
             'content' : content
             }
 
-    # def CrawlTest(self, response):
-    #     for quote in response.xpath('//div[@class="timeline-detail"]'):
-    #         format_date = '%d/%m/%Y'
-    #         datetime_obj = datetime.datetime.strptime(quote.xpath('.//div[@class="timeline-head"]/h3/text()').extract_first().split(" ")[-1], format_date)
-    #         yield {
-    #             'time' : quote.xpath('.//div[@class="timeline-head"]/h3/text()').extract_first().split(" ")[0],
-    #             'date' : datetime_obj.date(),
-    #             'content' : quote.xpath('.//div[@class="timeline-content"]/p/text()').extract()
-    #         }
