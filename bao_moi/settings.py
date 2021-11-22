@@ -16,11 +16,11 @@ ITEM_PIPELINES = {
    'scrapy_mysql_pipeline.MySQLPipeline': 300,
 }
 MYSQL_HOST = 'localhost'
-MYSQL_PORT = 3306
+MYSQL_PORT = 3308
 MYSQL_USER = 'root'
 MYSQL_PASSWORD = 'linhchi'
 MYSQL_DB = 'scrapy'
-MYSQL_TABLE = 'bao'
+MYSQL_TABLE = 'news'
 MYSQL_UPSERT = False
 MYSQL_RETRIES = 3
 MYSQL_CLOSE_ON_ERROR = True
